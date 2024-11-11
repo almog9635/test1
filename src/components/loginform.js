@@ -14,6 +14,7 @@ const LoginForm = () => {
       sessionStorage.setItem("accessToken", response.data.accessToken);
       sessionStorage.setItem("refreshToken", response.data.refreshToken);
       console.log("Login successful:", response.data);
+      console.log("hello")
     })
     .catch(error => {
     console.error("Login failed:", error);
